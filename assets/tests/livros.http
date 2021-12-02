@@ -1,1 +1,29 @@
-GET https://8080-purple-parakeet-881zbaej.ws-us17.gitpod.io/filmes
+@url = https://8080-brown-dragon-m9px39hs.ws-us21.gitpod.io
+GET {{url}}/filmes
+
+###
+
+POST {{url}}/filmes
+Content-Type: application/json
+
+{
+    "titulo" : "Exemplo"
+}
+
+###
+
+PUT {{url}}/filmes/4
+Content-Type: application/json
+
+{
+    "titulo" : "Ghostbusters"
+}
+
+###
+
+DELETE {{url}}/filmes
+Content-Type: application/json
+
+{
+    "id" : 8
+}
